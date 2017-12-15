@@ -3,4 +3,8 @@
     <string name="actn_clear">Clear</string>
     <string name="single_player">Single Player</string>
     <string name="multi_player">Multi Player</string>
+    <string name="X">X</string>
+    <string name="draw">Draw</string>
+    <string name="o">0</string>
+    <string name="score">Number of wins:</string>
 </resources>

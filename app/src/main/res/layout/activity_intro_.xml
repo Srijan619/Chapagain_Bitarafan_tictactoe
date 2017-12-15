@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/btnSingle"
-        style="@android:style/Widget.Button"
+        style="@android:style/Widget.Holo.Button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -19,10 +19,10 @@
 
     <Button
         android:id="@+id/btnMultiplayer"
-        style="@android:style/Widget.Button"
+        style="@android:style/Widget.Holo.Button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:backgroundTint="@android:color/transparent"
+        android:backgroundTint="@android:color/holo_orange_light"
         android:text="@string/multi_player" />
 </LinearLayout>

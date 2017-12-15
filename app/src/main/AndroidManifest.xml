@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".tictak"
-            android:label="Tick Tak Toe"></activity>
+            android:label="Tick Tak Toe" android:parentActivityName=".Intro_Activity"></activity>
     </application>
 
 </manifest>

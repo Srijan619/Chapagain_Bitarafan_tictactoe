@@ -7,7 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 
 public class tictak extends Activity implements View.OnClickListener {
@@ -24,6 +27,10 @@ public class tictak extends Activity implements View.OnClickListener {
     private ImageButton imageButton_8;
     private ImageButton imageButton_9;
 
+    private TextView txt0;
+    private TextView txtdraw;
+    private TextView txtX;
+
     int[] buttonIDs = new int[]{R.id.imgtick1, R.id.imgtick2, R.id.imgtick3, R.id.imgtick1_1, R.id.imgtick1_2, R.id.imgtick1_3, R.id.imgtick2_1, R.id.imgtick2_2, R.id.imgtick2_3};
     private boolean player_1 = true;
     private boolean player_2 = false;
@@ -37,6 +44,7 @@ public class tictak extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tictak);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         imageButton_1 = (ImageButton) findViewById(R.id.imgtick1);
         imageButton_2 = (ImageButton) findViewById(R.id.imgtick2);
@@ -47,6 +55,9 @@ public class tictak extends Activity implements View.OnClickListener {
         imageButton_7 = (ImageButton) findViewById(R.id.imgtick2_1);
         imageButton_8 = (ImageButton) findViewById(R.id.imgtick2_2);
         imageButton_9 = (ImageButton) findViewById(R.id.imgtick2_3);
+        txt0=(TextView)findViewById(R.id.txt0);
+        txtdraw=(TextView)findViewById(R.id.txtDraw);
+        txtX=(TextView)findViewById(R.id.txtX);
 
         imageButton_1.setOnClickListener(this);
         imageButton_2.setOnClickListener(this);
